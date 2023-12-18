@@ -1,7 +1,7 @@
 import ReactCardFlip from "react-card-flip";
 import { useState } from "react";
 
-function MyRecipesComponents({ title, image, ingredients, instructions }) {
+function RecipeSearch({ title, image, ingredients, instructions }) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleClick = () => {
@@ -40,8 +40,7 @@ function MyRecipesComponents({ title, image, ingredients, instructions }) {
     </div>
   );
 }
-
-export default MyRecipesComponents;
+export default RecipeSearch;
 
 
 

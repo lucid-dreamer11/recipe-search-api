@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import './App.css';
 import icon from "./icons8-search-64.png";
-import MyRecipesComponents from "./MyRecipesComponent";
+import RecipeSearch from "./RecipeSearch";
 
 function App() {
 
@@ -46,7 +46,7 @@ const finalSearch = (e) => {
       </button>
       </div>
       {myRecipes.map ((item, index) => (
-        <MyRecipesComponents  key ={index}
+        <RecipeSearch  key ={index}
           title={item.recipe.label} 
           image ={item.recipe.image} 
           ingredients={item.recipe.ingredientLines}
