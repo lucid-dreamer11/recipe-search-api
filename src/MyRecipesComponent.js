@@ -34,12 +34,13 @@ function MyRecipesComponents({ title, image, ingredients, instructions }) {
       </ReactCardFlip>
       <div className="container">
         <button className="flip-button" onClick={handleClick}>
-          Click for Method
+          {isFlipped ? "Click for Ingredients" : "Click for Method"}
         </button>
       </div>
     </div>
   );
 }
+
 export default MyRecipesComponents;
 
 
