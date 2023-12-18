@@ -16,14 +16,14 @@ useEffect (() => {
   const showRecipe = async () => {
   const response = await fetch (`https://api.edamam.com/api/recipes/v2?type=public&q=${wordSubmitted}&app_id=${MY_ID}&app_key=${MY_KEY}`);
   const data = await response.json();
-  console.log(data.hits)
+  // console.log(data.hits)
   setMyRecipes(data.hits)
   }
   showRecipe ()
 }, [wordSubmitted])
 
 const newRecipeSearch = (e) => {
-  console.log(e.target.value)
+  // console.log(e.target.value)
   setMySearch(e.target.value)
 }
 const finalSearch = (e) => {
