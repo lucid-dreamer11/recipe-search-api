@@ -38,12 +38,12 @@ const finalSearch = (e) => {
       <div className="container field">
         <form onSubmit={finalSearch}>
           <input className="search" placeholder="Search..." onChange={newRecipeSearch} value={mySearch}/>
+          <div className="container">
+            <button onClick={finalSearch}>
+              <img src={icon} alt="icon"/>
+            </button>
+          </div>
         </form>
-      </div>
-      <div className="container">
-        <button onClick={finalSearch}>
-        <img src={icon} alt="icon"/>
-      </button>
       </div>
       {myRecipes.map ((item, index) => (
         <RecipeSearch  key ={index}
